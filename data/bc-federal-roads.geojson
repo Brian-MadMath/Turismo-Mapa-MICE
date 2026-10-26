@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "purpose": "Standalone frontend prototype",
+    "geometryNote": "Simplified corridor geometry for UI validation. Replace with an exported Baja California subset of RNC 2025 before production.",
+    "classificationNote": "Federal route names and classes follow the federal network list used for the prototype."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-001","index":1,"route":"MEX-003","name":"Ensenada - El Chinero","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-116.564915,31.875227],[-116.504794,31.887848],[-116.280557,31.888869],[-116.075738,31.848649],[-115.874349,31.601503],[-115.812125,31.526456],[-115.682717,31.377896],[-115.532696,31.328658],[-115.057702,31.428477]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-002","index":2,"route":"MEX-001","name":"Ensenada - Lázaro Cárdenas","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-116.596,31.866],[-116.573,31.72],[-116.458,31.558],[-116.35,31.32],[-116.20,31.02],[-116.065,30.84],[-115.99,30.72],[-115.95,30.56]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-003","index":3,"route":"MEX-001","name":"Ent. Punta Prieta - Bahía de Los Ángeles","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-114.33,28.93],[-114.10,28.97],[-113.85,28.96],[-113.56,28.95]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-004","index":4,"route":"MEX-001","name":"Ent. Punta Prieta - Guerrero Negro","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-114.33,28.93],[-114.28,28.70],[-114.20,28.43],[-114.12,28.18],[-114.05,28.005]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-005","index":5,"route":"MEX-001","name":"Lázaro Cárdenas - Ent. Punta Prieta","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-115.95,30.56],[-115.84,30.30],[-115.73,30.05],[-115.42,29.90],[-115.05,29.78],[-114.72,29.73],[-114.50,29.35],[-114.33,28.93]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-006","index":6,"route":"MEX-005","name":"Mexicali - San Felipe","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-115.467,32.624],[-115.40,32.42],[-115.31,32.18],[-115.20,31.93],[-115.06,31.62],[-114.94,31.32],[-114.84,31.02]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-007","index":7,"route":"MEX-002","name":"Ramal a Aeropuerto de Mexicali","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-115.467,32.624],[-115.39,32.63],[-115.31,32.632],[-115.241,32.631]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-008","index":8,"route":"MEX-005","name":"San Felipe - Chapala","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-114.84,31.02],[-114.76,30.76],[-114.67,30.48],[-114.61,30.29],[-114.50,30.05],[-114.39,29.79],[-114.43,29.58],[-114.45,29.40]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-009","index":9,"route":"MEX-002","name":"Sonoita - Mexicali","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-114.73,32.49],[-114.92,32.52],[-115.12,32.56],[-115.30,32.59],[-115.467,32.624]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-010","index":10,"route":"MEX-003","name":"Tecate - El Sauzal","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-116.63,32.57],[-116.61,32.39],[-116.58,32.24],[-116.57,32.10],[-116.62,31.99],[-116.69,31.89]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-011","index":11,"route":"MEX-001","name":"Tijuana - Ensenada (Libre)","networkType":"free","networkLabel":"Red Federal Libre"},
+      "geometry": {"type":"LineString","coordinates":[[-117.03,32.53],[-117.03,32.45],[-117.05,32.36],[-116.95,32.24],[-116.85,32.10],[-116.76,31.99],[-116.69,31.89],[-116.60,31.86]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-012","index":12,"route":"MEX-002D","name":"El Centinela - La Rumorosa (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-115.72,32.61],[-115.82,32.59],[-115.92,32.56],[-116.05,32.55]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-013","index":13,"route":"MEX-002D","name":"La Rumorosa - Tecate (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-116.05,32.55],[-116.20,32.55],[-116.35,32.56],[-116.50,32.57],[-116.63,32.57]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-014","index":14,"route":"MEX-003D","name":"Libramiento de Ensenada (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-116.69,31.90],[-116.61,31.96],[-116.52,31.97],[-116.45,31.92]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-015","index":15,"route":"MEX-002D","name":"Libramiento de Mexicali (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-115.58,32.65],[-115.50,32.60],[-115.42,32.57],[-115.32,32.58]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-016","index":16,"route":"MEX-002D","name":"Libramiento de Tecate (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-116.68,32.59],[-116.63,32.60],[-116.57,32.58]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-017","index":17,"route":"MEX-002D","name":"Tecate - Tijuana (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-116.63,32.57],[-116.76,32.55],[-116.89,32.52],[-117.03,32.53]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-018","index":18,"route":"MEX-001D","name":"Tijuana - Ensenada (Cuota)","networkType":"toll","networkLabel":"Red Federal de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-117.03,32.53],[-117.10,32.46],[-117.06,32.36],[-116.98,32.27],[-116.88,32.10],[-116.77,31.99],[-116.68,31.91],[-116.63,31.88]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"id":"federal-019","index":19,"route":"MEX-002D-MEX","name":"Mexicali - Tijuana","networkType":"integrated","networkLabel":"Red Federal Integrada por Tramos Libres y de Cuota"},
+      "geometry": {"type":"LineString","coordinates":[[-115.467,32.624],[-115.72,32.61],[-116.05,32.55],[-116.35,32.56],[-116.63,32.57],[-116.82,32.54],[-117.03,32.53]]}
+    }
+  ]
+}
