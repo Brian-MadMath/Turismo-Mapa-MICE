@@ -1,0 +1,80 @@
+<section class="route-map">
+
+  <div class="destination-picker">
+    <select id="destinationSelect" aria-label="Seleccionar destino" disabled>
+      <option value="">Cargando destinos…</option>
+    </select>
+  </div>
+
+  <div class="map-experience" id="mapExperience">
+
+    <div class="map-viewport" id="mapViewport">
+
+      <svg
+        id="mexicoMap"
+        class="mexico-map"
+        role="img"
+        aria-label="Mapa de destinos nacionales desde Tijuana"
+      ></svg>
+
+      <div class="map-loading" id="mapLoading" role="status">
+        <span id="mapLoadingText">Cargando mapa…</span>
+      </div>
+
+    </div>
+
+    <article
+      class="destination-popup"
+      id="destinationPopup"
+      hidden
+    >
+
+      <button
+        class="destination-popup__close"
+        id="popupClose"
+        type="button"
+        aria-label="Cerrar información del destino"
+      >×</button>
+
+      <div class="destination-popup__media">
+        <img
+          id="popupImage"
+          src=""
+          alt=""
+          width="640"
+          height="360"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <div class="destination-popup__content">
+
+        <p class="destination-popup__eyebrow" id="popupEyebrow"></p>
+
+        <div class="destination-popup__heading-row">
+          <h2 id="popupTitle"></h2>
+          <span class="destination-popup__code" id="popupCode"></span>
+        </div>
+
+        <p class="destination-popup__airport" id="popupAirport"></p>
+        <p class="destination-popup__description" id="popupDescription"></p>
+        <p class="destination-popup__hours" id="popupHours" hidden></p>
+
+        <a
+          class="destination-popup__cta"
+          id="popupCta"
+          href="#"
+        >
+          <span id="popupCtaLabel">Conocer destino</span>
+        </a>
+
+      </div>
+
+    </article>
+
+    <p class="sr-only" id="mapStatus" aria-live="polite"></p>
+
+  </div>
+
+</section>

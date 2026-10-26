@@ -1,29 +1,31 @@
-# Baja California — Municipios + Carreteras Federales
+# Mexico Routes Working Copy
 
-Prototipo standalone con D3.js + SVG + GeoJSON, sin tiles, sin zoom y sin API key.
+This package reconstructs the current Tijuana national-routes map from the material that is still recoverable in the chat.
 
-## Ejecutar
+## What is exact
 
-Desde esta carpeta:
+- The minimum map HTML supplied in the current message.
+- The current JavaScript renderer supplied in `Pasted text.txt`, with two small correctness changes:
+  - an empty CMS airport name stays empty instead of becoming the invented text `Aeropuerto`;
+  - placeholder images are generated locally as SVG data URLs instead of using `placehold.co`.
+- The complete 32-state GeoJSON supplied in `js.file.patch`.
+- The recoverable published CMS record for Acapulco (ACA): coordinates, state, description and approximate hours.
 
-```bash
-python3 -m http.server 8000
-```
+## What is reconstructed
 
-Después abre `http://localhost:8000`.
+The original complete Webflow CMS destination collection is no longer available as downloadable raw data in this conversation. The standalone copy therefore includes the recoverable Acapulco record as a hidden `.map-destination-data` element. Add additional records using the same attributes to exercise the unchanged CMS adapter.
 
-No abras `index.html` directamente con `file://`, porque el navegador puede bloquear los `fetch()` de los archivos JSON/GeoJSON.
+## Run
 
-## Arquitectura
+Open `index.html` directly in a browser while online. It does not use fetch for the map data, so no local web server is required. The only external runtime dependency is D3 v7 from jsDelivr.
 
-- `index.html`: misma estructura base y clases del mapa nacional para facilitar la futura unificación en Webflow.
-- `app.js`: render, selección, popup y adaptadores de datos.
-- `data/bc-federal-roads.geojson`: corredores federales simplificados para validar UI.
-- `data/bc-map-content.json`: textos/imágenes temporales editables sin tocar el renderer.
-- Municipios: `AGEM_02.geojson` 2025 se carga como GeoJSON estático desde un mirror comunitario derivado del Marco Geoestadístico de INEGI.
+## Expected behavior
 
-## Antes de producción
+- 32 Mexico state outlines render.
+- TIJ origin marker renders in Baja California.
+- ACA destination marker renders in Guerrero.
+- The dropdown contains Acapulco.
+- Selecting ACA draws the route, highlights Guerrero and opens the popup.
+- Closing the popup clears the route/selection.
 
-La geometría de carreteras incluida es deliberadamente simplificada. Sustitúyela por un recorte de Baja California de la Red Nacional de Caminos 2025 (RNC) y conserva las propiedades `id`, `route`, `name`, `networkType` y `networkLabel` para no cambiar el renderer.
-
-Para hacer el proyecto 100% local, descarga `AGEM_02.geojson`, guárdalo en `data/bc-municipalities.geojson` y cambia una sola línea en `CONFIG.municipalitiesUrl`.
+`webflow-minimum-embed.html` contains only the map markup from the current message and can be used later when converting the standalone copy back to Webflow.
